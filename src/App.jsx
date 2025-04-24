@@ -8,6 +8,9 @@ import BoardWrite from "./pages/board/BoardWrite";
 import { BoardDetail } from "/src/pages/board/BoardDetail.jsx";
 import FindPassword from "./pages/find/FindPassword";
 import FindEmail from "./pages/find/FindEmail";
+import Board from "./pages/board/Board";
+import WritePost from "./pages/board/WritePost";
+
 
 function App() {
     const location = useLocation();
@@ -27,6 +30,8 @@ function App() {
                 // ...
                 <Route path="/find-password" element={<FindPassword />} />
                 <Route path="/find-email" element={<FindEmail />} />
+                <Route path="/board" element={<Board />} />
+                <Route path="/write-post" element={<WritePost />} />
             </Routes>
         </>
     );
