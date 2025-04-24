@@ -1,0 +1,12 @@
+/* src/style/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css 또는 global CSS */
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* 스크롤바 제거 */
+}

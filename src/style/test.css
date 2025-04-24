@@ -1,0 +1,500 @@
+/* 진짜 전체 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: white; /* 🔥 페이지 전체 배경 무조건 흰색 */
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* src/style/test.css */
+
+.search-wrapper {
+  width: 100%;
+  min-height: 100vh; /* height 대신 min-height 써야 내용 늘어나도 배경 유지됨 */
+  background-image: url("src/assets/studylog-banner-twilight.jpg"); /* 정확한 경로로 수정 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* 반복 방지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* 내부 여백 살짝 줘서 터지지 않게 */
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.search-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.search-input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 350px;
+  color: black;
+}
+
+.search-button {
+  background-color: #0c1f4a;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tag-button {
+  background-color: #0c1f4a;
+  color: white;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+
+
+.title {
+  font-size: 5rem; /* 존재감 확실히 */
+  font-weight: 600; /* 얇지만 탄탄하게 */
+  letter-spacing: 1px; /* 살짝 여유 */
+  color: #001F54; /* 네이비 유지 */
+  margin-bottom: 20px;
+}
+
+
+.search-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px; /* 검색창과 태그 사이 여백 */
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc; /* 기본 테두리 부드러운 회색 */
+  border-radius: 8px 0 0 8px;
+  outline: none; /* 기본 검정색 아웃라인 없애기 */
+  transition: border-color 0.3s ease;
+}
+
+.search-button {
+  padding: 12px;
+  background-color: #001F54;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.tags-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tag-button {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  background-color: #001F54; /* 기본 네이비 */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag-button:hover {
+  background-color: #003377; /* hover 시 살짝 진한 네이비 */
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: white; /* 하얀색 테두리 */
+}
+
+body {
+  background-color: white; /* 무조건 흰색 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.search-button:active {
+  background-color: #d9d9d9; /* 눌렀을 때 부드러운 회색! */
+}
+
+.search-button:hover {
+  background-color: #003377;
+}
+
+.search-input:focus {
+  border-color: #d9d9d9; /* 포커스(눌렀을 때) 테두리를 부드러운 회색으로! */
+}
+
+.signup-container h2 {
+  color: black;
+  font-size: 2rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 회원가입 버튼 스타일 */
+.signup-link {
+  position: relative; /* 절대 fixed 쓰지마! */
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #2563eb;
+}
+
+/* 로그인 페이지 스타일 */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.login-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #1d4ed8;
+}
+
+.login-button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #001f54; /* 네이비 배경 */
+  color: #ffffff; /* 하얀 글씨 */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #003377; /* hover 시 살짝 더 진한 네이비 */
+}
+
+/* 화면 전체를 꽉 채우고 중앙정렬 */
+.signup-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* 흰색 배경 */
+}
+
+/* 폼 박스 */
+.signup-container {
+  width: 400px;
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* 회원가입 제목 */
+.signup-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #001f54; /* 네이비 */
+}
+
+/* 폼 */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 인풋 스타일 */
+.signup-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* 버튼 스타일 */
+.signup-button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #001f54; /* 네이비 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #003377;
+}
+
+/* 로그인 링크 */
+.signup-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.signup-link:hover {
+  color: #2563eb;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  background-color: #ffffff; /* 🔥 네이비 */
+}
+
+/* 헤더 안의 링크 */
+.header-link {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #001f54; /* 흰색 텍스트 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #001f54; /* hover 시 연한 하늘 */
+}
+
+/* 배경 */
+/* 로그인 전체를 감싸는 부분 수정 */
+/* 전체 배경 */
+/* 전체 배경 */
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 로그인 카드 */
+.login-card {
+  width: 420px;
+  padding: 50px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* 로고 */
+.logo-container {
+  margin-bottom: 16px;
+}
+
+.logo-image {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 로그인 폼 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* 입력창 */
+.login-input {
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #001F54;
+}
+
+/* 로그인 버튼 */
+.login-button {
+  margin-top: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #001F54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #003377;
+}
+
+/* 비밀번호 찾기 / 회원가입 */
+.login-footer {
+  font-size: 0.875rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.login-footer a {
+  color: #001F54;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* 로그인 상태 유지 체크박스 */
+.login-keep {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.login-keep input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  width: 150px; /* ✅ 여기 핵심!! */
+  height: auto; /* 비율 깨지지 않게 */
+  object-fit: contain; /* 이미지가 튀어나가지 않게 */
+}
+
+/* 로그인 상태 유지 체크박스 */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 12px;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* 비밀번호 찾기 / 아이디 찾기 링크 묶음 */
+.find-links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.875rem;
+}
+
+.find-links a {
+  color: #001f54;
+  text-decoration: none;
+}
+
+.find-links a:hover {
+  text-decoration: underline;
+}
+
